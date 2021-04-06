@@ -1,0 +1,24 @@
+{
+  "name": "studion",
+  "version": "0.0.1",
+  "description": "repositório das primeiras aulas de front end",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WedersonMarquesLuiz/Studion.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT"
+  ],
+  "author": "Dinho Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WedersonMarquesLuiz/Studion/issues"
+  },
+  "homepage": "https://github.com/WedersonMarquesLuiz/Studion#readme"
+}
