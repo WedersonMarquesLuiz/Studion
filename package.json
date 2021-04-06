@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/WedersonMarquesLuiz/Studion/issues"
   },
-  "homepage": "https://github.com/WedersonMarquesLuiz/Studion#readme"
+  "homepage": "https://github.com/WedersonMarquesLuiz/Studion#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
