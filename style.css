@@ -4,15 +4,16 @@
 }
 
 :root {
-    --color-primary:rgb(13, 135, 184);
     font-family:'montserrat',sans-serif;
     font-size: 16px;
+    --color-primary:rgb(13, 135, 184);
+    --default-padding: 1rem;
 
 }
 
 body {
     margin: 0;
-    padding-top: 125px;
+    padding-top: 6.75rem;
 }
 ul {
     display: flex;
@@ -23,24 +24,29 @@ ul {
 
 .navbar {
     position: fixed;
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
     top: 0;
     left: 0;
+
     width: 100vw;
-    height: 125px;
-    padding: 0 10px;
+    height: 6.75rem;
+    padding: 0 1rem;
+
     background-color:rgb(255,0,0);
     color: rgb(255,255,255);
-    
 }
+
+    
+
 .navbar__links {
     justify-self: end;
 }
 .navbar__links li {
-    font-size: 14px;
-    margin-right: 48px;
+    font-size: 0.875rem;
+    margin-right: 3rem;
     text-transform: uppercase;
 
 }
@@ -53,17 +59,92 @@ ul {
         color: var(--color-primary)
     }
     .logo--studion {
-        font-size: 36px;
+        font-size: 2.375rem;
         font-weight: 900;
-        line-height: .4ch;
+        line-height: .5ch;
         text-transform: uppercase;
         text-align: right;
     }
     .logo--studion__subtitle {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 300;
 
     }
     .copy--primary {
         color: var(--color-primary);
+    }
+   
+ 
+    #slider {
+        background-color: rgb(0,0,0);
+        color: rgb(255,255,255);
+        
+    }
+    .slide {
+        position: relative;
+        height: calc(100vh - 6.75rem);
+      
+    }
+    .slide__background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: -20vw;
+
+    }
+    .slide__copy {
+        position: absolute;
+        top: 6.75rem;
+        left: 45vw;
+        width: 100%;
+        height: 100%; 
+        
+        padding-left: 5vw;
+        align-items: left;
+        text-align: left;
+    }
+        
+        .slide__copy h6 {
+            font-size: 0.9375rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .1875rem;
+            
+            
+        }
+    
+    .slide__copy span {
+        display: inline;
+    }
+    
+    .slide__copy h2 {
+        font-size: 6.25rem;
+        text-transform: uppercase;
+        line-height: 6.25rem;
+    }
+    .slide__copy h2 span {
+        display: block;
+    }
+
+    .btn {
+
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border: .125rem solid rgb(255,255,255);
+        border-radius: 5rem;
+        color: var(--color-primary);
+        background: unset;
+        font-size: .9375rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.3s all ease;
+    }
+
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+        border-color: var(--color-primary);
+        background-color: var(--color-primary);
+        color: rgb(255,255,255);
+
     }
